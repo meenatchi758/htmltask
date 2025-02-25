@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Job Application Form</legend>
+        <br>
+        <form action="submit_form.php" method="post">
+
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required style="width:400px;height:30px">
+            <br><br>
+
+
+            <label for="email">Email Id :</label>
+            <input type="text" id="Email" name="Email" placeholder="" style="width:400px;height:30px">
+            <br><br>
+
+            <label for="phone">Mobile No:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required
+                style="width:400px;height:30px">
+            <br><br>
+
+            <label for="resume">Upload Resume (PDF/DOC):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            <br><br>
+
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </fieldset>
+</body>
+
+</html>
